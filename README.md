@@ -24,11 +24,11 @@ This app has been deployed on heroku. It can be accessed using the link : [Herok
 /addCountry
 
 ### _Request body_ is as follows
-{
-    "id": 1,
-    "countryName":"USA",
-    "continent": "North America",
-    "president":"Joe Biden"
+{  
+    "id": 1,  
+    "countryName":"USA",  
+    "continent": "North America",  
+    "president":"Joe Biden"  
 
 }
 
@@ -38,10 +38,10 @@ This app has been deployed on heroku. It can be accessed using the link : [Herok
 
 ### _Request body_ is as follows
 {
-    "id": 1,
-    "countryName":"United States of America",
-    "continent": "North America",
-    "president":"Joe Biden"
+    "id": 1,  
+    "countryName":"United States of America",  
+    "continent": "North America",  
+    "president":"Joe Biden"  
 
 }
 
