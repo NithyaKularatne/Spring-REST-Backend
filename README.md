@@ -12,15 +12,24 @@ This is a rest API endpoint that supports basic http CRUD operations. The follow
 This app has been deployed on heroku. It can be accessed using the link : [Heroku Deployment](https://springboot-api-server.herokuapp.com/rest/v2)
 
 ## Building from source
-To build from source run the following command inside the Spring-REST-Backend-main.  
-* .\gradlew bootRun  
+To build from source run the following command inside the Spring-REST-Backend-main.
+
+```
+.\gradlew bootRun
+```
 You may refer the gradle installation for more details.
 
 ## Installing with a package manager
 SDKMAN! is a prerequisite tool for managing parallel versions of multiple Software Development Kits on most Unix-based systems. All its installation details can be found in https://gradle.org/install
-* sdk install grade 6.8.2  
-Homebrew is "the missing package manager for macOS".
-* brew install gradle
+
+```
+sdk install grade 6.8.2
+```
+Homebrew can be used to install gradle on MacOs.
+
+```
+brew install gradle
+```
 
 
 # APIs
