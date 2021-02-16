@@ -37,7 +37,7 @@ This app has been deployed on heroku. It can be accessed using the link : [Herok
 /updateCountryById/{id}
 
 ### _Request body_ is as follows
-{
+{  
     "id": 1,  
     "countryName":"United States of America",  
     "continent": "North America",  
