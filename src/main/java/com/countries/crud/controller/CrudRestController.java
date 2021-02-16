@@ -28,7 +28,7 @@ public class CrudRestController {
 	
 	//@RequestMapping(path = "/getCountryList", method=RequestMethod.GET)
 	@GetMapping("/getCountryList")
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin
 	public List<Country> fetchCountryList(){
 		List<Country> countries = new ArrayList<Country>();
 		
@@ -38,14 +38,14 @@ public class CrudRestController {
 	}
 	
 	@PostMapping("/addCountry")
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin
 	public Country saveCountry(@RequestBody Country country){
 	
 		return service.saveCountryInDb(country);
 	}
 	
 	@PutMapping("/updateCountryById/{id}")
-	
+	@CrossOrigin
 	public ResponseEntity<?>  updateCountry(@RequestBody Country country){
 	
 		if(service.updateCountryInDb(country))
@@ -57,14 +57,14 @@ public class CrudRestController {
 	}
 	
 	@GetMapping("/getCountryById/{id}")
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin
 	public Country fetchCountryById(@PathVariable int id){
 		return service.fetchCountryById(id).get();
 		
 	}
 	
 	@DeleteMapping("/deleteCountryById/{id}")
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin
 	public ResponseEntity<?> deleteCountryById(@PathVariable int id){
 		
 		
